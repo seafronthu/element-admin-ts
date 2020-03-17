@@ -1,0 +1,138 @@
+
+.hhf-plugins-mask
+  position fixed
+  top 0
+  left 0
+  bottom 0
+  right 0
+  width 100vw
+  height 100vh
+  background-color rgba(0, 0, 0, 0.3)
+.hhf-plugins-popup
+  position fixed
+  top 0
+  left 0
+  width 100%
+.hhf-plugins-popup-container
+  position fixed
+  display flex
+  flex-flow row nowrap
+  justify-content center
+  align-items center
+  // top 50%
+  // left 0
+  // right 0
+  // margin 0 auto
+  width 100%
+// confirm
+.hhf-plugins-popup-top
+  left 50%
+  top 20px
+  width 80%
+  transform translate(-50%, 0)
+.hhf-plugins-popup-center
+  left 50%
+  top 50vh
+  width 80%
+  transform translate(-50%, -50%)
+.hhf-plugins-confirm
+  position relative
+  width 100%
+  background-color #ffffff
+  border-radius 4px
+  box-shadow 0 4px 12px rgba(0, 0, 0, 0.15)
+  .hhf-plugins-confirm-container
+    display flex
+    flex-flow column nowrap
+    padding 20px 20px 12px
+  .hhf-plugins-confirm-first
+    display flex
+    flex-flow row wrap
+    justify-content flex-start
+    align-items center
+    margin 0
+  .hhf-plugins-confirm-title
+    color rgba(0, 0, 0, 0.85)
+    font-weight 500
+    font-size 16px
+    line-height 1.4
+    display block
+    overflow hidden
+  .hhf-plugins-confirm-content
+    margin 10px 0 0 0
+    font-size 14px
+    color rgba(0, 0, 0, 0.65)
+  .hhf-plugins-confirm-btn
+    text-align right
+    margin-top 24px
+  .hhf-plugins-confirm-btn-content
+    display inline-block
+    outline none
+    line-height 30px
+    font-weight 400
+    text-align center
+    touch-action manipulation
+    cursor pointer
+    border 1px solid #d9d9d9
+    white-space nowrap
+    padding 0 10px
+    font-size 14px
+    border-radius 4px
+    height 32px
+    user-select none
+    transition all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+    position relative
+    box-shadow 0 2px 0 rgba(0, 0, 0, 0.015)
+    color rgba(0, 0, 0, 0.65)
+    background-color #fff
+    box-sizing border-box
+    text-indent 5px
+    letter-spacing 5px
+    &:last-child
+      margin-left 10px
+  .hhf-plugins-confirm-default
+    color rgba(#096dd9, 0.7)
+    background-color #fff
+    border-color rgba(#096dd9, 0.7)
+    &:active
+      color rgba(#096dd9, 1)
+      background-color #fff
+      border-color rgba(#096dd9, 1)
+  .hhf-plugins-confirm-primary
+    color #fff
+    background-color rgba(#096dd9, 0.7)
+    border-color rgba(#096dd9, 0.7)
+    text-shadow 0 -1px 0 rgba(0, 0, 0, 0.12)
+    box-shadow 0 2px 0 rgba(0, 0, 0, 0.045)
+    &:active
+      background-color rgba(#096dd9, 1)
+      border-color rgba(#096dd9, 1)
+// tip
+.hhf-plugins-tip
+  position relative
+  width 100%
+  background-color #ffffff
+  border-radius 4px
+  padding 16px
+  display flex
+  flex-flow row nowrap
+  justify-content flex-start
+  align-items center
+  box-shadow 0 4px 12px rgba(0, 0, 0, 0.15)
+// 动画
+.hhf-plugins-scale-enter-active, .hhf-plugins-slide-enter-active, .hhf-plugins-fade-enter-active
+  transition all 0.5s ease
+.hhf-plugins-scale-leave-active, .hhf-plugins-slide-leave-active, .hhf-plugins-fade-leave-active
+  transition all 0.3s cubic-bezier(1, 0.5, 0.8, 1)
+.hhf-plugins-scale-enter, .hhf-plugins-scale-leave-to
+  transform translate(0, 100vh) scale(0) !important
+  opacity 0
+.hhf-plugins-fade-enter, .hhf-plugins-fade-leave-to
+  // transform scale(0) !important
+  opacity 0
+.hhf-plugins-slide-enter
+  transform translateY(-50vh) !important
+  // top 0 !important
+  opacity 0
+.hhf-plugins-slide-leave-to
+  opacity 0
